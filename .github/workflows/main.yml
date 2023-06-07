@@ -1,0 +1,31 @@
+name: E2E Tests
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches: [master]
+
+env:
+  PORT: ${{ secrets.PORT }}
+  ACC_ID: ${{ secrets.ACC_ID }}
+  ACC_SECRET: ${{ secrets.ACC_SECRET }}
+  TEST_TIMEOUT: ${{ secrets.TEST_TIMEOUT }}
+
+jobs:
+  Jest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup node version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 17.4.0
+
+      - name: Run Tests
+        run: |
+          npm i 
+          npm test
