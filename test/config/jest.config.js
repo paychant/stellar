@@ -4,7 +4,7 @@ module.exports = {
   rootDir: '../../',
   testRegex: '.test.ts$',
   reporters: ['default'],
-  testTimeout: parseInt(process.env.TEST_TIMEOUT),
+  testTimeout: parseInt(process.env.TEST_TIMEOUT || 10000),
   testEnvironment: 'node',
   collectCoverage: false,
   testPathIgnorePatterns: ['<rootDir>/(node_modules)/'],
