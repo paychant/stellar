@@ -1,8 +1,8 @@
-<div style="padding-top: 10px; text-align: center;">
+<div align="center" style="padding-top: 10px;">
   <img alt="Paychant" src="https://static.paychant.com/general/paychant_white.png" width="200" />
   <br/>
   <div>The financial infrastructure that enables wallets and dApps to seamlessly onramp and offramp African users through Africa's traditional payment rails.</div>
-  <h1 >Paychant Proof of Intent for SCF</h1>
+  <h1>Paychant Proof of Intent for SCF</h1>
 </div>
 
 
