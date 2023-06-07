@@ -1,4 +1,4 @@
-name: E2E Tests
+name: Tests
 
 on:
   push:
@@ -26,7 +26,10 @@ jobs:
         with:
           node-version: 17.4.0
 
+      - name: Install
+        run: |
+          npm ci
+
       - name: Run Tests
         run: |
-          npm i 
           npm test
