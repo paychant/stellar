@@ -2,9 +2,10 @@ name: Tests
 
 on:
   push:
-    branches:
-      - '*'
-      - '!main'
+    paths:
+      - '**.ts'
+      - '**.yml'
+      - '**.json'
   pull_request:
     branches: [master]
 
