@@ -6,8 +6,9 @@ on:
       - '**.ts'
       - '**.yml'
       - '**.json'
-  pull_request:
-    branches: [master]
+    branches:
+      - '*'
+      - '!main'
 
 env:
   PORT: ${{ secrets.PORT }}
